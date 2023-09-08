@@ -1,0 +1,15 @@
+name: "Olympix Integrated Security"
+description: "Perform code analysis to detect potentially dangerous vulnerabilities"
+branding:
+  icon: 'x'
+  color: 'purple'
+inputs:
+  args:
+    description: "Arguments to customize code analyzer"
+    default: --output-format sarif --output-path ./
+runs:
+  using: "docker"
+  image: "docker://olympix/integrated-security:latest"
+  args:
+  - analyze
+  - ${{ inputs.args }}
