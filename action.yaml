@@ -1,5 +1,5 @@
 name: "Olympix Integrated Security"
-description: "Perform code analysis to detect potentially dangerous vulnerabilities"
+description: "Perform code analysis in Solidity projects to find potentially dangerous vulnerabilities"
 branding:
   icon: 'x'
   color: 'purple'
