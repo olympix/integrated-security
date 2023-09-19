@@ -22,7 +22,7 @@ The Olympix Integrated Security action enables Olympix's vulnerability analysis 
 
 ## Usage
 
-Here's a workflow example that utilizes the Olympix Integrated Security action with default rules and uploads the result to the GitHub Code Scanning tool (It is necessary to enable `Read and write permissions` on GitHub `Workflow permissions` to upload result to GitHub Code Scanning).
+Here's a workflow example that utilizes the Olympix Integrated Security action with default rules and uploads the result to the GitHub Code Scanning tool (It is necessary to enable `Read and write permissions` on GitHub `Settings > Actions > General > Workflow permissions` to upload result to GitHub Code Scanning).
 
 ```shell
 name: Integrated Security Workflow
