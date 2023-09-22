@@ -75,7 +75,7 @@ jobs:
 
 <br/>
 
-## Anlysis Options
+## Analysis Options
 
 - `-w | --workspace-path`: Defines the root project directory path. It is important to know the project context to provide more accurate vulnerabilities analysis. The default is the current directory
 - `-p | --path`: Defines the Solidity project directory path to be analyzed. It can be used multiple times to include each project analysis directory. The default is the 'contracts' and 'src' directories if they exist, otherwise it is the same directory path of workspace
