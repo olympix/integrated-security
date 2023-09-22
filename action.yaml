@@ -10,6 +10,8 @@ inputs:
 runs:
   using: "docker"
   image: "docker://olympix/integrated-security:latest"
+  env:
+    OLYMPIX_INTEGRATION_ORIGIN: "gha"
   args:
   - analyze
   - ${{ inputs.args }}
