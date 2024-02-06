@@ -4,9 +4,7 @@
 
 The Olympix Integrated Security action enables Olympix's vulnerability analysis tools to be incorporated into continuous integration workflows for code repositories on GitHub. The action currently performs code analysis on projects written in Solidity and has flexible options for results output, using the SARIF format by default. By using this action, Solidity developers can find potentially dangerous vulnerabilities in their smart contracts when the CI workflow runs.
 
-
 ![vulnerabilities](https://github.com/olympix/integrated-security/blob/main/img/vulnerabilities.PNG)
-
 
 ## Features
 
@@ -33,7 +31,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Run Olympix Integrated Security
         uses: olympix/integrated-security@main
         env:
@@ -49,7 +47,7 @@ jobs:
 
 ![vulnerability_detail](https://github.com/olympix/integrated-security/blob/main/img/vulnerability_detail.PNG)
 
-Here's a workflow example that utilizes the Olympix Integrated Security action with `json` result to the Github console, and excludes `uninitialized state variable` and `default visibility` vulnerabilities.
+Here's a workflow example that utilizes the Olympix Integrated Security action with `json` result to the GitHub console, and excludes `uninitialized state variable` and `default visibility` vulnerabilities.
 
 ```shell
 name: Integrated Security Workflow
@@ -57,10 +55,10 @@ on: push
 jobs:
   security:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Olympix Integrated Security
         uses: olympix/integrated-security@main
         env:
